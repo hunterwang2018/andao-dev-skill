@@ -1,0 +1,26 @@
+interface:
+  display_name: "Andao Dev Skill"
+  short_description: "软件开发的完成开发流程，严格遵循skill中定义的流程规范 Primary output: 一个重复使用的技能包 Keep this correction in"
+  default_prompt: "Use $andao-dev-skill when you need to 软件开发的完成开发流程，严格遵循skill中定义的流程规范 Primary output: 一个重复使用的技能包 Keep this correction in scope: 正确."
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets:
+    - "openai"
+    - "claude"
+    - "generic"
+    - "vscode"
+  activation:
+    mode: "manual"
+    paths: []
+  execution:
+    context: "inline"
+    shell: "bash"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow-metadata-only"
+  degradation:
+    openai: "metadata-adapter"
+    claude: "neutral-source-plus-adapter"
+    generic: "neutral-source"
+    vscode: "agent-skills-source-with-vscode-notes"

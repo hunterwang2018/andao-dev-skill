@@ -1,0 +1,13 @@
+{
+  "job": "软件开发的完成开发流程，严格遵循skill中定义的流程规范",
+  "real_inputs": [
+    "软件功能模块定义，相关资料等"
+  ],
+  "primary_output": "一个重复使用的技能包",
+  "description": "软件开发的完成开发流程，严格遵循skill中定义的流程规范 Primary output: 一个重复使用的技能包 Keep this correction in scope: 正确.",
+  "exclusions": [],
+  "constraints": [],
+  "standards": [],
+  "correction": "正确",
+  "user_references": []
+}

@@ -1,0 +1,82 @@
+{
+  "score": 43,
+  "band": "low",
+  "gate_passed": false,
+  "strengths": [
+    "Real input shape is explicit.",
+    "A correction loop already tightened the first reading."
+  ],
+  "gaps": [
+    {
+      "key": "job_specificity",
+      "label": "Recurring job is still generic",
+      "reason": "The current job statement sounds more like a packaging goal than a concrete repeated task.",
+      "severity": "high"
+    },
+    {
+      "key": "primary_output",
+      "label": "Primary output is still generic",
+      "reason": "The current output does not yet say what a useful finished deliverable looks like.",
+      "severity": "high"
+    },
+    {
+      "key": "exclusions",
+      "label": "Near-neighbor exclusions are missing",
+      "reason": "The route may blur into nearby requests without an exclusion list.",
+      "severity": "high"
+    },
+    {
+      "key": "constraints",
+      "label": "Constraints are missing",
+      "reason": "The package does not yet know which tradeoffs matter most.",
+      "severity": "high"
+    },
+    {
+      "key": "standards",
+      "label": "Quality bar is implied, not explicit",
+      "reason": "The first evaluation target is still underspecified.",
+      "severity": "medium"
+    }
+  ],
+  "follow_up_questions": [
+    {
+      "slot": "job",
+      "question": "If you say it plainly, what concrete repeated task should this skill own every time?",
+      "why": "A skill needs a real recurring job, not only a generic packaging goal.",
+      "list": false,
+      "label": "Recurring job is still generic",
+      "severity": "high"
+    },
+    {
+      "slot": "primary_output",
+      "question": "What finished hand-back should this skill return so the next person can keep moving?",
+      "why": "The output is the anchor for package design and review.",
+      "list": false,
+      "label": "Primary output is still generic",
+      "severity": "high"
+    },
+    {
+      "slot": "exclusions",
+      "question": "What nearby requests should this skill clearly leave out so the boundary stays clean?",
+      "why": "Exclusions are the fastest route to better trigger quality.",
+      "list": true,
+      "label": "Near-neighbor exclusions are missing",
+      "severity": "high"
+    }
+  ],
+  "anchor_sentence": "软件开发的完成开发流程，严格遵循skill中定义的流程规范 Primary output: 一个重复使用的技能包.",
+  "recommended_action": "Pause before deep authoring and close the highest-leverage gaps first.",
+  "context": {
+    "job": "软件开发的完成开发流程，严格遵循skill中定义的流程规范",
+    "real_inputs": [
+      "软件功能模块定义，相关资料等"
+    ],
+    "primary_output": "一个重复使用的技能包",
+    "description": "软件开发的完成开发流程，严格遵循skill中定义的流程规范 Primary output: 一个重复使用的技能包 Keep this correction in scope: 正确.",
+    "exclusions": [],
+    "constraints": [],
+    "standards": [],
+    "correction": "正确",
+    "user_references": []
+  }
+}

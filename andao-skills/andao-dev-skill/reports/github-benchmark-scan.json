@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "query": "primary keep correction scope",
+  "source": "github-api",
+  "network_boundary": "github-api-only",
+  "repositories": [],
+  "cross_repo": {
+    "borrow": [],
+    "avoid": []
+  },
+  "external_references": [],
+  "borrow_prompt": "No benchmark suggestions were collected yet. You can retry with a stronger query or add manual references.",
+  "warnings": []
+}
